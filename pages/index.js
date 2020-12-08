@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import { useSelector } from 'react-redux';
 
 export default function Home() {
+  const language = useSelector((state) => state.language);
   return (
     <div>
       <Head>
@@ -9,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Welcome to Dax Parts with Next JS!</h1>
+        <h1>{language.title}</h1>
       </main>
     </div>
   );
