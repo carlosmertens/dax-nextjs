@@ -11,7 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>{language.title}</h1>
+        <h1 className='text-6xl text-gray-500'>
+          Welcome to project with Next JS
+        </h1>
       </main>
     </div>
   );
